@@ -1,0 +1,16 @@
+.Carrusel {
+  height: 670px;
+  width: 700px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumbs {
+  display: none;
+}

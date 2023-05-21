@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+li{
+    display: inline-flex;
+    margin: 5px 10px 0 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-select: none;
+    font-weight: 800;
+}
+
+li:hover {
+    cursor: pointer;
+    color: #3e74f3;
+    transition: 0.5s;
+    
+}
+
+i {
+    font-size: 25px;
+    cursor: pointer;
+}    
