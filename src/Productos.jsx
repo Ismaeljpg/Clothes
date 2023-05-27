@@ -1,18 +1,26 @@
-import Productos from "./Productos"
+import Productos from "./Productos";
+import './Productos.css'
 
 function Stock() {
-    {Productos.map((producto, i) => {
-        return(
-           <>
-            <div key={i}>
-                <img src={producto.img}/>
-                <p>{producto.name}</p>
-                <p>{producto.descripcion}</p>
-                <span>{producto.precio}</span>
+  return (
+    <>
+      {Productos.map((producto, i) => {
+        return (
+          <div className="flex">
+            <div className="container" key={i}>
+              <img className="imagen" src={producto.img} />
+              <p className="name">{producto.name}</p>
+              <p className="descripcion">{producto.descripcion}</p>
+              <div className="BT">
+              <span className="precio">{producto.precio}</span>
+              <button className="button" id="button">AGREGAR AL CARRITO</button>
+              </div>
             </div>
-           </>
-        )
-    })}
+          </div>
+        );
+      })}
+    </>
+  );
 }
 
-export default Stock
+export default Stock;

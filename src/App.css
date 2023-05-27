@@ -3,6 +3,9 @@
     background-color: #F5F5F5;
     padding: 15px;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 li{
@@ -20,7 +23,23 @@ li:hover {
     
 }
 
-i {
+.fa-bag-shopping {
     font-size: 25px;
     cursor: pointer;
-}    
+}
+
+.hidden-cart {
+    position: fixed;
+    z-index: 10000;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border: 1px solid #000;
+    right: 0;
+    top: 50px;
+    transition: 0.3s;
+}
+
+.active {
+    right: 0;
+}

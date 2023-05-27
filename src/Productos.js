@@ -52,9 +52,18 @@ const Productos = [
         img: "https://nikearprod.vtexassets.com/arquivos/ids/378346-800-800?v=638138921243930000&width=800&height=800&aspect=true",
         name: "Nike Sportswear Essential",
         precio: "$55",
-        descripcion: "Buzo con Capucha de Moda para Mujer (Plus Size)"
-    } 
+        descripcion: "Buzo con Capucha de Moda para Mujer"
+    },
+    
+    {
+        img: "https://nikearprod.vtexassets.com/arquivos/ids/439573-800-800?v=638145704744500000&width=800&height=800&aspect=true",
+        name: "Nike Sportswear",
+        precio: "$35",
+        descripcion: "Buzo de Moda para Hombre"
+    }
 ];
+
+console.log(Productos)
 
 // function stock(){
 //     return(

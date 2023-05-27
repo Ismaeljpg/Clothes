@@ -1,6 +1,6 @@
 function NavBar() {
     return(
-        <div className="flex border-b-2 border-t-2 border-black justify-between">
+        <div className="flex bg-black text-white justify-between">
             <ul className="inline">
                 <li className="mx-7">Hombres</li>
                 <li className="mx-7">Mujeres</li>
@@ -9,7 +9,7 @@ function NavBar() {
                 <li className="mx-7">Zapatillas</li>
             </ul>
             <div>
-            <input type="text" className="bg-gray-200 rounded-md border-2 border-black"/><i className="fa-solid fa-magnifying-glass text-xl"></i>
+            <input type="text" className=" rounded-md border-2 border-black"/><i className="fa-solid fa-magnifying-glass text-xl"></i>
             </div>
             
         </div>
