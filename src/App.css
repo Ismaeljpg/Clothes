@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .navbar{
     display: flex;
     background-color: #F5F5F5;
@@ -23,23 +29,70 @@ li:hover {
     
 }
 
-.fa-bag-shopping {
-    font-size: 25px;
-    cursor: pointer;
-}
-
 .hidden-cart {
     position: fixed;
     z-index: 10000;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 550px;
     background: #fff;
     border: 1px solid #000;
-    right: 0;
+    right: -100%;
     top: 50px;
     transition: 0.3s;
+    white-space: nowrap;
+    overflow: scroll;
+    text-overflow: ellipsis;
 }
+
+.cart {
+    display: flex;
+    height: 80px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+
+
+.cart-product{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
 
 .active {
     right: 0;
+}
+
+.icon {
+    fill: red;
+    height: 25px;
+    margin: 7px;
+}
+
+.categoria {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+    
+}
+
+.categoria button {
+    position: sticky;
+    top: 0;
+    color: #000;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 1000;
+   
+}
+
+.btn-categoria {
+   margin: 5px;
+   color: #fff;
 }

@@ -1,26 +1,28 @@
 import Productos from "./Productos";
-import './Productos.css'
+import "./Productos.css";
 
-function Stock() {
+
+
+function Stock({addToCart, filteredProductos,}) {
+
+
   return (
-    <>
-      {Productos.map((producto, i) => {
-        return (
-          <div className="flex">
-            <div className="container" key={i}>
-              <img className="imagen" src={producto.img} />
-              <p className="name">{producto.name}</p>
-              <p className="descripcion">{producto.descripcion}</p>
-              <div className="BT">
+    <div className="grid">
+      {filteredProductos.map((producto) => (
+        <div className='flex' key={producto.id}>
+          <div className="container">
+            <img className='imagen' src={producto.img} alt="" />
+            <h3 className='name'>{producto.name}</h3>
+            <p className='descripcion'>{producto.descripcion}</p>
+            <div className="BT">
               <span className="precio">{producto.precio}</span>
-              <button className="button" id="button">AGREGAR AL CARRITO</button>
-              </div>
+              <button className="button" onClick={() => addToCart(producto.id)}>AGREGAR AL CARRITO</button>
             </div>
           </div>
-        );
-      })}
-    </>
+        </div>
+      ))}
+    </div>
   );
 }
 
-export default Stock;
+export default Stock
