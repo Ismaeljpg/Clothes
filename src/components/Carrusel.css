@@ -1,0 +1,24 @@
+
+
+.Carrusel {
+  height: 670px;
+  width: 700px;
+  object-fit: contain;
+  margin: auto;
+  z-index: -10000;
+}
+
+
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumbs {
+  display: none;
+}
+
+.carousel-status {
+  display: none;
+}
