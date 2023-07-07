@@ -1,9 +1,6 @@
-
-
 .Carrusel {
-  height: 670px;
-  width: 700px;
-  object-fit: contain;
+  height: 550px;
+  object-fit: cover;
   margin: auto;
   z-index: -10000;
 }
@@ -11,7 +8,6 @@
 
 .img{
     height: 100%;
-    width: 100%;
     object-fit: cover;
 }
 

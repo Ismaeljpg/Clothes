@@ -1,9 +1,8 @@
 import './App.css'
-import DemoCarousel from './Carrusel.jsx';
-import NavBar from './NavBar.jsx';
-import Productos from './Productos';
-import Stock from './Productos.jsx';
-import login from './login';
+import DemoCarousel from './components/Carrusel.jsx';
+import NavBar from './components/NavBar.jsx';
+import Productos from './components/Productos';
+import Stock from './components/Productos.jsx';
 import { useState, useEffect } from 'react';
 
 
@@ -66,13 +65,6 @@ function App() {
   return (
     <div>
       <div className="navbar">
-        <nav>
-          <ul>
-            <li>inicio</li>
-            <li>Contacto</li>
-            <li><a href="./"></a></li>
-          </ul>
-        </nav>
         <button onClick={() => setIsActive(!isActive)}>
           <img src="../SVG/bag-shopping-solid.svg" className="w-6" alt="" />
         </button>
@@ -107,7 +99,11 @@ function App() {
         filterCategory={filterCategory}
         Productos={Productos}
       />
-      <Stock productos={Productos} filteredProductos={filteredProductos} addToCart={addToCart}/>
+      <Stock 
+      productos={Productos} 
+      filteredProductos={filteredProductos} 
+      addToCart={addToCart}
+      />
     </div>
   );
 }

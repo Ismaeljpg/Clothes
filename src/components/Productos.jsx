@@ -1,7 +1,4 @@
-import Productos from "./Productos";
 import "./Productos.css";
-
-
 
 function Stock({addToCart, filteredProductos,}) {
 
