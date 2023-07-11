@@ -7,8 +7,15 @@
     grid-template-columns: repeat(3, 1fr);
     place-items: center; 
     margin: 50px 50px 50px 50px;
-    
 }
+
+@media (max-width: 1250px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+}
+
+
 
 .flex{
     display: flex;
