@@ -32,7 +32,12 @@ function App() {
 
 
   const removeFromCart = (id) => {
-    setCarrito(carrito.filter((producto) => producto.id !== id));
+    const index = carrito.findIndex((producto) => producto.id === id);
+    if (index !== -1) {
+      const newCarrito = [...carrito];
+      newCarrito.splice(index, 1);
+      setCarrito(newCarrito);
+    }
   };
 
   const handleClassChange = (e) => {

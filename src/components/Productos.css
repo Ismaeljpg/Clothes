@@ -9,9 +9,17 @@
     margin: 50px 50px 50px 50px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
     .grid {
         grid-template-columns: auto;
+    }
+
+    .flex {
+        width: 300px;
+    }
+
+    .descripcion {
+        font-size: 14px;
     }
 }
 
@@ -20,7 +28,6 @@
 .flex{
     display: flex;
     transition: 0.5s all ease;
-    
 }
 
 .container {
