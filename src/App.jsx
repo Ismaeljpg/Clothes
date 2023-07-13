@@ -71,7 +71,7 @@ function App() {
     <div>
       <header className="navbar">
         <button className='z-50 absolute w-8 h-8' onClick={() => setIsActive(!isActive)}>
-          <img src="../SVG/bag-shopping-solid.svg" className="w-6" alt="" />
+          <img src='../public/bag-shopping-solid.svg' className='w-6' alt="" />
         </button>
       </header>
       <div onChange={handleClassChange} className={`hidden-cart ${isActive ? 'active' : ''}`}>
@@ -87,7 +87,7 @@ function App() {
                     <button onClick={() => removeFromCart(producto.id)}>
                       <img
                         className="icon"
-                        src="../SVG/trash-solid.svg"
+                        src="../public/trash-solid.svg"
                         alt=""
                       />
                     </button>
