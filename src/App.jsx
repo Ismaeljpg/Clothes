@@ -5,7 +5,7 @@ import Productos from './components/Productos';
 import Stock from './components/Productos.jsx';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBagShopping, faTrash, faShirt} from '@fortawesome/free-solid-svg-icons'
+import {faBagShopping, faTrash,} from '@fortawesome/free-solid-svg-icons'
 
 
 
