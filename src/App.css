@@ -97,7 +97,7 @@
    display: inline-flex;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 900px) {
 
     .categoria {
         text-align: left;
@@ -109,5 +109,9 @@
     .btn-categoria {
         margin: 15px 5px 5px 5px;
         text-align: start;
+    }
+
+    .bolsa {
+        font-size: 18px;
     }
 }

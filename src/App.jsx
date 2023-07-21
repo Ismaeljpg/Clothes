@@ -4,6 +4,8 @@ import NavBar from './components/NavBar.jsx';
 import Productos from './components/Productos';
 import Stock from './components/Productos.jsx';
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faBagShopping, faTrash, faShirt} from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -70,8 +72,8 @@ function App() {
   return (
     <div>
       <header className="navbar">
-        <button className='z-50 absolute w-8 h-8' onClick={() => setIsActive(!isActive)}>
-          <img src='../public/bag-shopping-solid.svg' className='w-6' alt="" />
+        <button className='z-50 absolute text-3xl w-8 h-8 bolsa' onClick={() => setIsActive(!isActive)}>
+          <FontAwesomeIcon icon={faBagShopping}/>
         </button>
       </header>
       <div onChange={handleClassChange} className={`hidden-cart ${isActive ? 'active' : ''}`}>
@@ -84,12 +86,8 @@ function App() {
                   <div></div>
                   <div className="cart-product">
                     <h3 className="text-4xl">{producto.precio}</h3>
-                    <button onClick={() => removeFromCart(producto.id)}>
-                      <img
-                        className="icon"
-                        src="../public/trash-solid.svg"
-                        alt=""
-                      />
+                    <button className='text-2xl text-red-600' onClick={() => removeFromCart(producto.id)}>
+                      <FontAwesomeIcon icon={faTrash}/>
                     </button>
                   </div>
                 </div>
